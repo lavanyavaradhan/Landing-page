@@ -1,0 +1,333 @@
+@import url(https://fonts.googleapis.com/css2?family=Merriweather:wght@100;200;300;400;500;600;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Pacifico&display=swap);
+
+body {
+  font-family: 'Merriweather', serif;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Pacifico', handwriting;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+}
+
+/* !bg setup */
+header{
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    /* background-color: cyan; */
+    /* background-image: url("./1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+/* !container setup start */
+header .container{
+    z-index: 2;
+    /* z-index: 2; */
+    width: 90%;
+    height: 100vh;
+    /* background-color: gray; */
+}
+
+/* ? nav bar start */
+.container .nav{
+    z-index: 3;
+    width: 100%;
+    height: 10vh;
+    /* background-color: beige; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav div{
+    font-size: 2.5rem;
+    font-family: 'Pacifico', handwriting;
+    color: white;
+    text-shadow: 0 0 5px white, 
+    0 0 10px rgb(255, 80, 197);
+}   
+
+nav .my-profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aquamarine; */
+    width: 70px;
+    aspect-ratio: 1;
+}
+
+nav .my-profile .fa-regular{
+    font-size: 28px;
+    color: white;
+}
+
+nav .my-profile .fa-regular:hover{
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.925);
+   border: 3px solid rgb(255, 255, 255);
+   width: 60px;
+   aspect-ratio: 1;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+}
+/* ? nav bar end */
+
+/* ?content setup */
+.container .content{
+    width: 100%;
+    height: 90vh;
+    /* background-color: rgb(110, 26, 26); */
+    display: flex;
+    flex-wrap: wrap;
+    align-content: start;
+}
+
+/* ?left panel start*/
+.content .left-panel{
+    z-index: 2;
+    width: 50%;
+    height: 90vh;
+    /* background-color: rgb(234, 0, 255); */
+    display: flex;
+    flex-direction: column; 
+    align-items:start;
+    justify-content: center;
+    gap: 15px;
+}
+
+.content .left-panel h1{
+    font-family: 'Merriweather', serif;
+    color: white;
+    font-size: 2.66rem;
+}
+
+.content .left-panel h3{
+    font-family: 'Merriweather', serif;
+    color: white;
+    font-size: 1.66rem;
+}
+
+.content .left-panel p{
+    width: 65%;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+.content .left-panel button{
+    font-family: 'Merriweather', serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    width: 20%;
+    color: white;
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 8px 24px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.content .left-panel button:hover{
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 800;
+    width: 20%;
+    color: black;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    padding: 8px 24px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+/* ?left-panel end */
+
+
+/* ?right-panel start */
+.content .right-panel{
+    z-index: 1;
+    width: 50%;
+    height: 90vh;
+    /* background-color: blue; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    gap: 20px;
+}
+
+/* !bg changing setup */
+.right-panel .box{
+    background-color: #000;
+    width: 100%;
+    aspect-ratio: 16/12;
+    object-fit: cover;
+    object-position: center;
+}
+
+.right-panel > #bg{
+    z-index: 1;
+    position: absolute;
+    background-image: url("./1.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    bottom: 0;
+}
+
+.right-panel> .bg-change{
+    z-index: 3;
+    display: none;
+}
+
+.right-panel> .bg-box{
+    z-index: 2;
+   
+}
+
+.right-panel label .box{
+    width: 100px;
+    aspect-ratio: 16/12;
+    background-color: rgba(0, 0, 0, 0.473);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    
+}
+
+/* !image indicator setup */
+label .box{
+    opacity: 80%;
+}
+
+.box:hover{
+    box-shadow: 0 0 5px white, 0 0 10px rgb(255, 255, 255);
+}
+
+/* !when click the image indicator changes */
+#bg1:checked~ #bg{
+    background-image: url("./1.jpg");
+}
+
+#bg1:checked~ .box1 .box{
+    width: 150px;
+    aspect-ratio: 12/8;
+    opacity: 100%;
+    background-blend-mode:normal;
+    box-shadow: 0 0 10px rgb(255, 255, 207), 0 0 15px rgba(0, 0, 0, 0.685);
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+#bg2:checked~ #bg{
+    background-image: url("./2.jpg");
+}
+
+#bg2:checked~ .box2 .box{
+    width: 150px;
+    aspect-ratio: 12/8;
+    opacity: 100%;
+    box-shadow: 0 0 10px rgb(255, 255, 207), 0 0 15px rgba(0, 0, 0, 0.685);
+    background-blend-mode:normal;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+#bg3:checked~ #bg{
+    background-image: url("./3.jpg");
+}
+
+#bg3:checked~ .box3 .box{
+    width: 150px;
+    aspect-ratio: 12/8;
+    opacity: 100%;
+    box-shadow: 0 0 10px rgb(255, 255, 207), 0 0 15px rgba(0, 0, 0, 0.685);
+    background-blend-mode:normal;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+#bg4:checked~ #bg{
+    background-image: url("./4.jpg");
+}
+
+#bg4:checked~ .box4 .box{
+    width: 150px;
+    aspect-ratio: 12/8;
+    opacity: 100%;
+    box-shadow: 0 0 10px rgb(255, 255, 207), 0 0 15px rgba(0, 0, 0, 0.685);
+    background-blend-mode:normal;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+#bg5:checked~ #bg{
+    background-image: url("./5.jpg");
+}
+
+#bg5:checked~ .box5 .box{
+    width: 150px;
+    aspect-ratio: 12/8;
+    opacity: 100%;
+    box-shadow: 0 0 10px rgb(255, 255, 207), 0 0 15px rgba(0, 0, 0, 0.685);
+    background-blend-mode:normal;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+/* ?right panel setup end */
+
+/* !container setup end */
+
+/* !blur content */
+header .blur-content{
+    z-index: 1;
+    background-color: rgba(20, 1, 1, 0.404);
+    backdrop-filter: Blur(2px);
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+}
